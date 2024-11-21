@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_KP.Client.Employer"
+             Title="Employer"
+             BackgroundColor="#e6e6e6">
+    <HorizontalStackLayout HorizontalOptions="Center">
+        <Editor BackgroundColor="#b5b5b6" WidthRequest="600"  Margin="0,20,50,20"/>
+        <VerticalStackLayout VerticalOptions="Center">
+            <Entry
+                Placeholder = "Почта клиента" WidthRequest="300" BackgroundColor="#b5b5b6" Margin="0,10,0,0"/>
+            <StackLayout Padding="8">
+                <Label x:Name="header_1" Text="Выберите тип участка" FontSize="18" TextColor="Black"/>
+                <Picker x:Name="typePicker"  BackgroundColor="#b5b5b6" WidthRequest="300">
+                    <Picker.Items>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <Entry
+                Placeholder = "Размер" WidthRequest="300" BackgroundColor="#b5b5b6" Margin="0,10"/>
+            <Entry
+                Placeholder = "Сумма" WidthRequest="300" BackgroundColor="#b5b5b6" Margin="0,10"/>
+            <Entry
+                Placeholder = "Адрес" WidthRequest="300" BackgroundColor="#b5b5b6" Margin="0,0,0,20"/>
+            <HorizontalStackLayout>
+                
+                <Button x:Name="GoOutButton"
+                    Clicked="OnGoOutClicked"
+                    Text="Выйти из аккаунта"
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#8d2d2d"
+                    TextColor="White"
+                    WidthRequest="295"
+                    Margin="10,10"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+
+    </HorizontalStackLayout>
+</ContentPage>

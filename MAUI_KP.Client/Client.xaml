@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_KP.Client.Client"
+             Title="Client"
+             BackgroundColor="#e6e6e6">
+    <VerticalStackLayout
+    Spacing="25"
+    Padding="40,10" VerticalOptions="Center">
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <VerticalStackLayout>
+                <StackLayout Padding="8">
+                    <Label x:Name="header_1" Text="Выберите тип участка" FontSize="18" TextColor="Black"/>
+                    <Picker x:Name="typePicker"  BackgroundColor="#b5b5b6" WidthRequest="600">
+                        <Picker.Items>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+
+                <StackLayout Padding="8">
+                    <Label x:Name="header_2" Text="Выберите недвижимость" FontSize="18" TextColor="Black"/>
+                    <Picker x:Name="real_estatePicker"  BackgroundColor="#b5b5b6" WidthRequest="600">
+                        <Picker.Items>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+                <HorizontalStackLayout>
+                    <Button x:Name="OrderButton"
+                            Text="Заказать"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            HorizontalOptions="Center"
+                            BackgroundColor="#5d4aea"
+                            TextColor="White"
+                            WidthRequest="295"
+                            Margin="10,10"/>
+                    <Button x:Name="GoOutButton"
+                            Clicked="OnGoOutClicked"
+                            Text="Выйти из аккаунта"
+                            SemanticProperties.Hint="Counts the number of times you click"
+                            HorizontalOptions="Center"
+                            BackgroundColor="#8d2d2d"
+                            TextColor="White"
+                            WidthRequest="295"
+                            Margin="0,10"/>
+                </HorizontalStackLayout>
+                
+            </VerticalStackLayout>
+            
+        </HorizontalStackLayout>
+        
+
+
+
+
+
+
+
+
+
+
+    </VerticalStackLayout>
+
+</ContentPage>

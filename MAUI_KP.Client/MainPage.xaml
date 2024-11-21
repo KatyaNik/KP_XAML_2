@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_KP.Client.MainPage"
+             BackgroundColor="#e6e6e6">
+
+    <VerticalStackLayout
+    Spacing="25"
+    Padding="30,0"
+    VerticalOptions="Center">
+
+        <Entry
+            Placeholder = "Логин" WidthRequest="250" BackgroundColor="#b5b5b6"/>
+        <Entry
+            Placeholder = "Пароль" WidthRequest="250" BackgroundColor="#b5b5b6"/>
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+            <Button
+                x:Name="LoginButton"
+                Text="Войти"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnLoginButtonClicked"
+                HorizontalOptions="Center"
+                BackgroundColor="#5d4aea"
+                TextColor="White"
+                
+                Margin="0,0,10,0"/>
+            
+            <Button
+                x:Name="RegisterButton"
+                Text="Зарегистрироваться"
+                Clicked="OnRegisterButtonClicked"
+                SemanticProperties.Hint="Counts the number of times you click"
+                BackgroundColor="#8e82e4"
+                TextColor="White"
+                HorizontalOptions="Center"
+                />        
+        </HorizontalStackLayout>
+          
+
+    </VerticalStackLayout>
+
+</ContentPage>

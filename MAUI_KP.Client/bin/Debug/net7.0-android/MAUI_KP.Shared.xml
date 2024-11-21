@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MAUI_KP.Shared</name>
+    </assembly>
+    <members>
+        <member name="M:MAUI_KP.Shared.Services.Database.#ctor(System.String)">
+            <summary>
+            Constructor for mobile app
+            </summary>
+            <param name="filenameWithPath"></param>
+        </member>
+    </members>
+</doc>

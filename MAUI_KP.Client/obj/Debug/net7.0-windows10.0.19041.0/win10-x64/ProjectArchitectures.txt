@@ -1,0 +1,2 @@
+C:\Users\honor\source\repos\MAUI_KP\MAUI_KP.Client\MAUI_KP.Client.csproj;x64
+C:\Users\honor\source\repos\MAUI_KP\MAUI_KP.Shared\MAUI_KP.Shared.csproj;neutral
